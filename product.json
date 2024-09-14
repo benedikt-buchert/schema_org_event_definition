@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "item",
+    "description": "Definition for a GA4 purchase",
+    "type": "object",
+    "properties": {
+        "item_id": {
+            "description": "The ID of the item.",
+            "type": "string"
+        },
+        "item_name": {
+            "description": "The name of the item.",
+            "type": "string"
+        },
+        "affiliation": {
+            "description": "The price of the product",
+            "type": "number",
+            "exclusiveMinimum": 0
+        },
+        "tags": {
+            "description": "Tags for the product",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "productId",
+        "productName",
+        "price"
+    ]
+}

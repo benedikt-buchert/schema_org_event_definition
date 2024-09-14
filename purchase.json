@@ -1,0 +1,49 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/purchase.schema.json",
+    "title": "purchase",
+    "description": "Definition of a GA4 purchase event",
+    "type": "object",
+    "properties": {
+        "transaction_id": {
+            "description": "The unique identifier of a transaction",
+            "type": "string"
+        },
+        "value": {
+            "description": "The monetary value of the event",
+            "type": "number",
+            "exclusiveMinimum": 0
+        },
+        "currency": {
+            "description": "Currency of the items associated with the event",
+            "type": "string"
+        },
+        "coupon": {
+            "description": "The coupon name/code associated with the event",
+            "type": "string"
+        },
+        "shipping": {
+            "description": "Shipping cost associated with a transaction",
+            "type": "number"
+        },
+        "tax": {
+            "description": "Tax cost associated with a transaction",
+            "type": "number"
+        },
+        "items": {
+            "description": "Items associated with the event",
+            "type": "array",
+            "items": {
+                "$ref": "https://example.com/product.schema.json" 
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "transaction_id",
+        "currency",
+        "value",
+        "items"
+    ]
+}
