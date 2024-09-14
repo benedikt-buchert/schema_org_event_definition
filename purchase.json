@@ -7,34 +7,43 @@
     "properties": {
         "transaction_id": {
             "description": "The unique identifier of a transaction",
-            "type": "string"
+            "type": "string",
+            "example": "T_12345"
         },
         "value": {
             "description": "The monetary value of the event",
             "type": "number",
-            "exclusiveMinimum": 0
+            "minimum": 0,
+            "example": "Google"
         },
         "currency": {
             "description": "Currency of the items associated with the event",
-            "type": "string"
+            "type": "string",
+            "pattern": "^[A-Z]{3}$",
+            "example": "USD"
         },
         "coupon": {
             "description": "The coupon name/code associated with the event",
-            "type": "string"
+            "type": "string",
+            "example": "SUMMER_FUN"
         },
         "shipping": {
             "description": "Shipping cost associated with a transaction",
-            "type": "number"
+            "type": "number",
+            "minimum": 0,
+            "example": "3.33"
         },
         "tax": {
             "description": "Tax cost associated with a transaction",
-            "type": "number"
+            "type": "number",
+            "minimum": 0,
+            "example": "1.11"
         },
         "items": {
             "description": "Items associated with the event",
             "type": "array",
             "items": {
-                "$ref": "https://example.com/product.schema.json" 
+                "$ref": "https://example.com/product.schema.json"
             },
             "minItems": 1,
             "uniqueItems": true
