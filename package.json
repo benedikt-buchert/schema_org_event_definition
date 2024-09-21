@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "schema": "jsonschema2md -d ./schemas -o ./docusaurus/docs/docs/schema",
     "docusaurus": "cd ./docusaurus/docs && npm run build",
-    "docs": "npm run schema && npm run docusaurus"
+    "build": "npm run schema && npm run docusaurus"
   },
   "author": "",
   "license": "MIT",
