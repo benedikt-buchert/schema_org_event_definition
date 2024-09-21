@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/benedikt-buchert/schema_org_event_definition/tree/main/docusaurus/docs/docsx',
+            'https://github.com/benedikt-buchert/schema_org_event_definition/tree/main/docusaurus/docs/docs',
         },
         theme: {
           customCss: './src/css/custom.css',
