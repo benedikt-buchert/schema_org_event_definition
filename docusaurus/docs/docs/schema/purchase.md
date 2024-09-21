@@ -1,15 +1,3 @@
-# purchase Schema
-
-```txt
-https://example.com/purchase.schema.json
-```
-
-Definition of a GA4 purchase event
-
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                          |
-| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [purchase.schema.json](../../../../out/purchase.schema.json "open original schema") |
-
 ## purchase Type
 
 `object` ([purchase](purchase.md))
