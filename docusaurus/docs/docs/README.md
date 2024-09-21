@@ -14,7 +14,7 @@
 
 ### Arrays
 
-* [Items array](./purchase-properties-items-array.md "Items associated with the event") – `https://example.com/purchase.schema.json#/properties/items`
+* [Purchased Items](./purchase-properties-purchased-items.md "Items associated with the event") – `https://example.com/purchase.schema.json#/properties/items`
 
 ## Version Note
 

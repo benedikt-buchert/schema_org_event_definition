@@ -1,6 +1,6 @@
 ## items Type
 
-`object[]` ([product](purchase-properties-items-array-product.md))
+`object[]` ([product](purchase-properties-purchased-items-product.md))
 
 ## items Constraints
 
