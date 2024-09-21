@@ -12,7 +12,7 @@
 | [coupon](#coupon)                  | `string` | Optional | cannot be null | [purchase](purchase-properties-coupon.md "https://example.com/purchase.schema.json#/properties/coupon")                 |
 | [shipping](#shipping)              | `number` | Optional | cannot be null | [purchase](purchase-properties-shipping.md "https://example.com/purchase.schema.json#/properties/shipping")             |
 | [tax](#tax)                        | `number` | Optional | cannot be null | [purchase](purchase-properties-tax.md "https://example.com/purchase.schema.json#/properties/tax")                       |
-| [items](#items)                    | `array`  | Required | cannot be null | [purchase](purchase-properties-items.md "https://example.com/purchase.schema.json#/properties/items")                   |
+| [items](#items)                    | `array`  | Required | cannot be null | [purchase](purchase-properties-items-array.md "https://example.com/purchase.schema.json#/properties/items")             |
 
 ## transaction\_id
 
@@ -152,15 +152,15 @@ Items associated with the event
 
 * is required
 
-* Type: `object[]` ([product](purchase-properties-items-product.md))
+* Type: `object[]` ([product](purchase-properties-items-array-product.md))
 
 * cannot be null
 
-* defined in: [purchase](purchase-properties-items.md "https://example.com/purchase.schema.json#/properties/items")
+* defined in: [purchase](purchase-properties-items-array.md "https://example.com/purchase.schema.json#/properties/items")
 
 ### items Type
 
-`object[]` ([product](purchase-properties-items-product.md))
+`object[]` ([product](purchase-properties-items-array-product.md))
 
 ### items Constraints
 

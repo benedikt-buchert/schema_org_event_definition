@@ -1,0 +1,3 @@
+## coupon Type
+
+`string`

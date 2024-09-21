@@ -1,0 +1,3 @@
+## discount Type
+
+`number`
