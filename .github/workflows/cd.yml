@@ -1,0 +1,31 @@
+name: CD_action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  CD_job:
+    runs-on: ubuntu-latest
+
+    env:
+      WIF_PROVIDER:
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.8'
+
+    - name: Install dependencies
+      run: npm install && cd docusaurus && npm install
+
+    - name: Build
+      run: npm run build
+
+
