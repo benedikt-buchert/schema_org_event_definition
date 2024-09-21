@@ -10,8 +10,6 @@
 
 ### Objects
 
-
-
 ### Arrays
 
 * [Purchased Items](./purchase-properties-purchased-items.md "Items associated with the event") – `https://example.com/purchase.schema.json#/properties/items`
