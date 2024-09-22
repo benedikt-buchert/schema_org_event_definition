@@ -2,7 +2,7 @@
   "name": "schema_org_event_definition",
   "version": "1.0.0",
   "workspaces": [
-    "packages/docusaurus"
+    "./docusaurus"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
