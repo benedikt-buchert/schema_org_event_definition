@@ -32,6 +32,12 @@ The unique identifier of a transaction
 
 `string`
 
+### transaction\_id Examples
+
+```json
+"T_12345"
+```
+
 ## value
 
 The monetary value of the event
@@ -53,6 +59,12 @@ The monetary value of the event
 ### value Constraints
 
 **minimum**: the value of this number must greater than or equal to: `0`
+
+### value Examples
+
+```json
+"Google"
+```
 
 ## currency
 
@@ -82,6 +94,12 @@ Currency of the items associated with the event
 
 [try pattern](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24 "try regular expression with regexr.com")
 
+### currency Examples
+
+```json
+"USD"
+```
+
 ## coupon
 
 The coupon name/code associated with the event
@@ -99,6 +117,12 @@ The coupon name/code associated with the event
 ### coupon Type
 
 `string`
+
+### coupon Examples
+
+```json
+"SUMMER_FUN"
+```
 
 ## shipping
 
@@ -122,6 +146,12 @@ Shipping cost associated with a transaction
 
 **minimum**: the value of this number must greater than or equal to: `0`
 
+### shipping Examples
+
+```json
+3.33
+```
+
 ## tax
 
 Tax cost associated with a transaction
@@ -144,6 +174,12 @@ Tax cost associated with a transaction
 
 **minimum**: the value of this number must greater than or equal to: `0`
 
+### tax Examples
+
+```json
+1.11
+```
+
 ## items
 
 Items associated with the event
@@ -152,7 +188,7 @@ Items associated with the event
 
 * is required
 
-* Type: `object[]` ([product](purchase-properties-purchased-items-product.md))
+* Type: unknown\[]
 
 * cannot be null
 
@@ -160,7 +196,7 @@ Items associated with the event
 
 ### items Type
 
-`object[]` ([product](purchase-properties-purchased-items-product.md))
+unknown\[]
 
 ### items Constraints
 

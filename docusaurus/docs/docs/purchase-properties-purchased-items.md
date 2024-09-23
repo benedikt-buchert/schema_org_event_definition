@@ -1,6 +1,6 @@
 ## items Type
 
-`object[]` ([product](purchase-properties-purchased-items-product.md))
+unknown\[]
 
 ## items Constraints
 

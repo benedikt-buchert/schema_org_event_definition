@@ -2,7 +2,7 @@
 
 ## Top-level Schemas
 
-* [product](./product.md "Definition for a GA4 purchase") – `https://example.com/product.schema.json`
+* [product](./product.md "Definition for a GA4 purchase") – `https://examples.com/product.schema.json`
 
 * [purchase](./purchase.md "Definition of a GA4 purchase event") – `https://example.com/purchase.schema.json`
 
